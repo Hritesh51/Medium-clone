@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Navbar{
+  background-color: #FFC017;
+  background-size: cover;
+  border-bottom: 1.5px solid black;
+
+.NavBar_Container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.NavBar_Lists{
+  button{
+  background-color: #191919;
+  color: #fff;
+  text-transform: inherit;
+  border-radius: 50px;
+  width: 110px;
+   }
+  ul{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    li{
+      margin-left: 25px;
+      list-style: none;
+      cursor: pointer;
+    }
+  }
+}
+  img{
+    width: 210px;
+    padding: 15px;
+  }
+}
+
+
+
+.App_Main_Section{
+
+  h1{
+    font-size: 60px;
+    font-family: 'Noto Serif JP', serif;
+    color: #080808;
+  }
+
+  p{
+    font-size: 18px;
+    color: #2A2A2A;
+    margin-top: 45px;
+  }
+
+  a{
+    color: #2A2A2A;
+  }
+
+  button{
+    background-color: #FFC017;
+    width: 130px;
+    padding: 11px;
+    border-radius: 50px;
+    border: 1.8px solid black;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    // font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  background-color: #FFC017;
+  img{
+    width: 400px;
+    resize: contain;
+    // max-width: 500px;
+    margin-left: 180px;
+  }
+  border-bottom: 1.5px solid black;
+}
+
+.Main_trending{
+
+  margin-top: 40px;
+  // display: flex;
+
+  p{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.083px;
+    margin-left: 12px;
+  }
+
+  .trending_list{
+    // display: flex;
+  }
+
+  .trending_items{
+    // display: flex;
+
+    h2{
+      margin-top: 10px;
+      color: #E6E6E6;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .Writer{
+      // display: flex;
+      margin-top: 23px;
+      margin-left: 20px;
+      img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
