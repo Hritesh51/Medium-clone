@@ -8,120 +8,177 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-.Navbar{
+.Navbar__section{
   background-color: #FFC017;
-  background-size: cover;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.8px solid #080808;
+  padding: 0 40px 0 35px;
+  position: sticky;
+  top: 0;
 
-.NavBar_Container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  img
+  {
+    display: inline;
+    width: 170px;
+  }
 
-.NavBar_Lists{
-  button{
-  background-color: #191919;
-  color: #fff;
-  text-transform: inherit;
-  border-radius: 50px;
-  width: 110px;
-   }
-  ul{
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    li{
-      margin-left: 25px;
-      list-style: none;
-      cursor: pointer;
+  .Navbar__right{
+    font-size: 13px;
+    font-weight: 600;
+  
+    button{
+      background-color: #080808;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 50px;
+      width: 100px;
     }
   }
 }
-  img{
-    width: 210px;
-    padding: 15px;
-  }
-}
-
-
 
 .App_Main_Section{
-
-  h1{
-    font-size: 60px;
-    font-family: 'Noto Serif JP', serif;
-    color: #080808;
-  }
-
-  p{
-    font-size: 18px;
-    color: #2A2A2A;
-    margin-top: 45px;
-  }
-
-  a{
-    color: #2A2A2A;
-  }
-
-  button{
-    background-color: #FFC017;
-    width: 130px;
-    padding: 11px;
-    border-radius: 50px;
-    border: 1.8px solid black;
-    margin-top: 25px;
-    margin-bottom: 50px;
-    // font-family: inherit;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
   background-color: #FFC017;
-  img{
-    width: 400px;
-    resize: contain;
-    // max-width: 500px;
-    margin-left: 180px;
-  }
   border-bottom: 1.5px solid black;
-}
+  display: flex;
 
-.Main_trending{
+  .Heading__section{
+    margin-top: 30px;
+    margin-left: 50px;
+   h1{
+     width: 80%;
+     font-size: 60px;
+     font-weight: 600;
+     font-family: 'Noto Serif JP', serif;
+     color: #080808;
+    }
 
-  margin-top: 40px;
-  // display: flex;
+    @media(max-width:425px){
+      h1{
+        font-size: 50px;
+        width: 100%;
+      }
+      p{
+        font-size: 15px;
+      }
+    }
+ 
+    p{
+      width: 90%;
+     font-size: 18px;
+     color: #2A2A2A;
+     margin-top: 45px;
+    }
+ 
+    a{
+     color: #2A2A2A;
+    }
+ 
+    button{
+     background-color: #FFC017;
+     width: 130px;
+     padding: 11px;
+     border-radius: 50px;
+     border: 1.8px solid black;
+     margin-top: 25px;
+     margin-bottom: 50px;
+     font-family: inherit;
+     font-weight: 500;
+     cursor: pointer;
+    }
+  }
 
-  p{
+  .image__section{
+  
+    img{
+      display: inline;
+      width: 400px;
+      resize: contain;
+      max-width: 500px;
+      margin-right: 60px;
+     }
+  
+     @media (max-width:800px ) {
+      img{
+        display: none;
+      }
+    }
+   }
+ }
+
+ .Main_trending{
+
+    margin-top: 40px;
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+
+   p{
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.083px;
     margin-left: 12px;
-  }
+   }
 
-  .trending_list{
-    // display: flex;
-  }
+   .trending_list{
+     display: flex;
+   }
 
-  .trending_items{
-    // display: flex;
+   .Trending__section{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
 
-    h2{
-      margin-top: 10px;
-      color: #E6E6E6;
-      font-weight: bold;
-      font-size: 30px;
-    }
+     @media (max-width:767px)
+     {
+       flex-direction: column;
+     }
 
-    .Writer{
-      // display: flex;
-      margin-top: 23px;
-      margin-left: 20px;
-      img{
-        width: 20px;
-        height: 20px;
-        border-radius: 50px;
-      }
-    }
-  }
-}
+     .First__section{
+       display: flex;
+       flex: 0.3;
+       h2{
+         padding: 0 0 0 5px;
+         font-size: 30px;
+         font-weight: bold;
+         color: rgba(230, 230, 230, 1);;
+       }
+       .items__section{
+         display: flex;
+         flex-direction: column;
+         padding: 15px;
+         align-items: flex-start;
+         justify-content: flex-start;
+         .Name__section{
+           display: flex;
+           flex-direction: row;
+           img{
+             width: 20px;
+             height: 20px;
+             border-radius: 50px;
+           }
+           .name{
+             display: flex;
+             p{
+               color: #080808;
+             }
+           }
+         }
+       }
+
+       .Title__section{
+         flex: 0.3;
+         p{
+           color: #080808;
+           font-weight:bold;
+           font-size: 15px;
+         }
+       }
+
+       .Time__section{
+         flex: 0.3;
+         p{
+           color: gray;
+         }
+       }
+     }
+   }
+ }
