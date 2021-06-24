@@ -1,6 +1,7 @@
 import './App.scss';
 import Carousal from './components/Carousal';
 import Navbar from './components/Navbar';
+import Sidebars from './components/Sidebars';
 import Trending from './components/Trending';
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
         <Navbar />
         <Carousal />
-      <Trending />
+        <Trending />
+        <Sidebars />
     </div>
   );
 }
